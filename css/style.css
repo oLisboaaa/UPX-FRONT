@@ -83,3 +83,49 @@ a{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
+.headerlogin {
+    background-color: #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 60px; /* Defina uma altura fixa para o cabeçalho */
+    padding: 10px;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.mainbglogin {
+    width: 70vw;
+    height: 70vh;
+    background-color: #c5c5c5;
+    position: relative; /* Permite que o container fique entre o cabeçalho e o rodapé */
+    margin: 100px auto 50px auto; /* Adiciona espaço acima para evitar sobreposição com o cabeçalho */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    -webkit-box-shadow: 3px 3px 32px 5.5px #454545;
+    -moz-box-shadow: 3px 3px 32px 5.5px #454545;
+    box-shadow: 3px 3px 32px 5.5px #454545;
+}
+
+.footerlogin {
+    background-color: #c5c5c5;
+    width: 100vw;
+    height: 60px; /* Defina uma altura fixa para o rodapé */
+    text-align: center;
+    padding: 15px;
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;
+    left: 0;
+}
+
+
+.bglogin{
+    background:
+    #ffffff;
+}
