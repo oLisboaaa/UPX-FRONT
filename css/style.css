@@ -113,6 +113,8 @@ a{
     -webkit-box-shadow: 3px 3px 32px 5.5px #454545;
     -moz-box-shadow: 3px 3px 32px 5.5px #454545;
     box-shadow: 3px 3px 32px 5.5px #454545;
+    flex-grow: 1;
+    margin: 7.5% auto;
 }
 
 .footerlogin {
@@ -137,7 +139,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Define a altura total da tela */
+    height: 65vh; /* Define a altura total da tela */
+    width: 65vw;
     background-color: #d4c1a5; /* Cor de fundo da página */
   }
   
