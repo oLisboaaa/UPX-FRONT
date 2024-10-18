@@ -1,198 +1,193 @@
 body, html {
-    font-family: Arial;
-    color: black;
-    background:
-    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#ea8694 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
-    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#ea8694 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
-    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#ea8694 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
-    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#ea8694 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
-    repeating-conic-gradient(#ffecd2 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
-    radial-gradient(#0000 66%,#ea8694 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px
-    #ffecd2;
+  font-family: 'Alegreya', serif; /* Alterado para usar a fonte Alegreya */
+  color: black;
+  background:
+  radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#ea8694 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+  radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#ea8694 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+  radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#ea8694 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+  radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#ea8694 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+  repeating-conic-gradient(#ffecd2 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+  radial-gradient(#0000 66%,#ea8694 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px
+  #ffecd2;
 
-
-    width: 100vw;
-    height: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    background-color: #c6b399;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    width: 100vw;
-    height: auto;
-    -webkit-box-shadow: 0px 10.5px 10px 3px rgba(0, 0, 0, 0.56);
-    -moz-box-shadow: 0px 10.5px 10px 3px rgba(0, 0, 0, 0.56);
-    box-shadow: 0px 10.5px 10px 3px rgba(0, 0, 0, 0.56);
+background-color: #c6b399;
+width: 100vw;
+height: auto;
+text-align: center;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+-webkit-box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.56);
+-moz-box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.56);
+box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.56);
+padding: 15px;
 }
 
 .ulHeader, .ulFooter {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 10px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  font-size: 20px;
 }
 
 .mainbg {
-    width: 70vw;
-    min-height: 100vh; /* Altura mínima para garantir que cubra toda a altura da viewport */
-    background-color: #c6b399;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    -webkit-box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
-    -moz-box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
-    box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
-    padding: 25px;
-    margin-bottom: -50px;
+  width: 70vw;
+  min-height: 100vh;
+  background-color: #c6b399;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
+  box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
+  padding: 25px;
+  margin-bottom: -50px;
 }
 
 .content {
-    flex-grow: 1; /* O conteúdo ocupa o espaço disponível */
-    padding: 20px;
+  flex-grow: 1;
+  padding: 20px;
 }
 
 .footer {
-    background-color: #c6b399;
-    width: 100vw; /* O footer ocupa 100% da largura da viewport */
-    height: auto;
-    text-align: center;
-    position: relative; /* Se necessário, ajuste para 'absolute' se o comportamento não for o desejado */
-    left: 50%; /* Reposiciona o footer para começar no meio */
-    transform: translateX(-50%); /* Corrige o deslocamento horizontal para alinhar no centro */
-    -webkit-box-shadow: 0px -10.5px 10px 3px rgba(0, 0, 0, 0.56);
-    -moz-box-shadow: 0px -10.5px 10px 3px rgba(0, 0, 0, 0.56);
-    box-shadow: 0px -10.5px 10px 3px rgba(0, 0, 0, 0.56);
-    padding: 15px;
+  background-color: #c6b399;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-box-shadow: 3px -5px 10px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 3px -5px 10px 3px rgba(0, 0, 0, 0.56);
+  box-shadow: 3px -5px 10px 3px rgba(0, 0, 0, 0.56);
+  padding: 15px;
 }
 
 .imgfooter{
-    max-width: 25px;
-    max-height: 25px;
-    margin-right: 15px;
-    margin-bottom: -6px;
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 15px;
+  margin-bottom: -6px;
 }
 
 a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .headerlogin {
-    background-color: #c6b399;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 60px; /* Defina uma altura fixa para o cabeçalho */
-    padding: 10px;
-    position: fixed; /* Fixa o cabeçalho no topo */
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  background-color: #c6b399;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 60px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .mainbglogin {
-    width: 70vw;
-    height: 70vh;
-    background-color: #c6b399;
-    position: relative; /* Permite que o container fique entre o cabeçalho e o rodapé */
-    margin: 100px auto 50px auto; /* Adiciona espaço acima para evitar sobreposição com o cabeçalho */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 25px;
-    -webkit-box-shadow: 3px 3px 32px 5.5px #454545;
-    -moz-box-shadow: 3px 3px 32px 5.5px #454545;
-    box-shadow: 3px 3px 32px 5.5px #454545;
+  width: 70vw;
+  height: 70vh;
+  background-color: #c6b399;
+  position: relative;
+  margin: 100px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  -webkit-box-shadow: 3px 3px 32px 5.5px #454545;
+  -moz-box-shadow: 3px 3px 32px 5.5px #454545;
+  box-shadow: 3px 3px 32px 5.5px #454545;
 }
 
 .footerlogin {
-    background-color: #c6b399;
-    width: 100vw;
-    height: 60px; /* Defina uma altura fixa para o rodapé */
-    text-align: center;
-    padding: 15px;
-    position: fixed; /* Fixa o rodapé na parte inferior da página */
-    bottom: 0;
-    left: 0;
+  background-color: #c6b399;
+  width: 100vw;
+  height: 60px;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
-
 
 .bglogin{
-    background:
-    #AAA79E;
+  background: #AAA79E;
 }
 
-/* Estilos para centralizar a barra branca */
 .mainbglogin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Define a altura total da tela */
-    background-color: #d4c1a5; /* Cor de fundo da página */
-  }
-  
-  #mainl {
-    background-color: #c5b29b;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px; /* Define uma largura máxima para o formulário */
-  }
-  
-  .login-title {
-    font-size: 24px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d4c1a5;
+}
 
-    padding: 12px;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    padding: 16px;
-    margin-left: -22px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #4f4f4f;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #333;
-  }
-  
-  
+#mainl {
+  background-color: #c5b29b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  padding: 16px;
+  margin-left: -22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4f4f4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
